@@ -23,6 +23,7 @@ const Sidebar = () => {
             <NavLink
               className={'itemLink'}
               to='/'
+              onClick={toggleDrawer}
               // @ts-ignore
               activeStyle={{ color: 'rgba(0,255,12,1)' }}
             >
@@ -36,6 +37,7 @@ const Sidebar = () => {
             <NavLink
               className={'itemLink'}
               to='/dashboard'
+              onClick={toggleDrawer}
               //   @ts-ignore
               activeStyle={{ color: 'rgba(0,255,12,1)' }}
             >
@@ -50,6 +52,7 @@ const Sidebar = () => {
             <NavLink
               className={'itemLink'}
               to='/contact'
+              onClick={toggleDrawer}
               //   @ts-ignore
               activeStyle={{ color: 'rgba(0,255,12,1)' }}
             >
