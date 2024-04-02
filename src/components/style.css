@@ -1,0 +1,122 @@
+.layoutContainer {
+  display: 'flex';
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  position: relative;
+}
+.outsideDrawerContainer {
+  padding: 20px;
+  margin-left: 250px;
+}
+
+/* sidebar page  */
+
+.sidebar-container {
+  height: 100vh;
+  width: 250px;
+  background-color: #0c0c0c;
+  position: fixed;
+  top: 0;
+  transition: left 0.3s ease;
+  left: 0;
+  z-index: 999;
+}
+.sidebar-container.open {
+  left: 0;
+  z-index: 999;
+}
+
+.sidebar {
+  padding: 1rem 1.5rem;
+}
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.navlist {
+  list-style: none;
+}
+.items {
+  padding: 0.5rem 0;
+  font-size: 18px;
+  text-decoration: none;
+}
+.itemLink {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+.gradientText {
+  font-size: 28px;
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(130, 211, 9) 0%,
+    rgb(241, 189, 3) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  color: rgba(0, 255, 12, 1) !important;
+}
+
+/* //media query */
+@media (max-width: 768px) {
+  .sidebar-container.open {
+    left: -200px; /* Hide the sidebar by default on smaller screens */
+  }
+
+  .outsideDrawerContainer {
+    margin-left: 50px; /* Reset margin on smaller screens */
+  }
+  .toggle-button{
+    display: block;
+  }
+}
+
+/* home page style  */
+.button {
+  background-color: rgb(22, 133, 27);
+  color: #fff;
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  /* margin-top: 20px; */
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background_box {
+  background-color: #ffffff0f;
+  min-height: 20vh;
+  width: 100%;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cardPadding {
+  padding: 20px;
+}
+
+.desx {
+  opacity: 0.6;
+}
+.rate {
+  font-size: 18px;
+}
