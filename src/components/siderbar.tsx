@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar-container ${!isOpen ? 'open' : ''}`}>
-      <div className='sidebar gradientText'>Carbon Cell</div>
+      <div className='sidebar gradientText'>Cell</div>
       <button className='toggle-button' onClick={toggleDrawer}>
        { !isOpen ? <Menu />: <Close />}
       </button>
